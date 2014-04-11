@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../../reset.css">
+		<link rel="stylesheet" type="text/css" href="address.css">
+	</head>
+	<body>
+		<div class="address" id="address">
+			<div id="addressWrap" class="">
+				<div class="topBar">
+					<a id="addAddress" class="btn add" href="javascript:;">add</a>
+				</div>
+				<div id="main" class="hidden">
+					<div class="searchBar p20">
+						<input id="searchInput" class="inputText searchInput" type="text" placeholder="search address ..." />
+					</div>
+					<ul id="addressList" class="addressList pl20 pr20 pb20">
+					</ul>
+				</div>
+			</div>
+			<div id="amendAddress" class="hidden">
+				<div class="btnBar">
+					<a id="save" class="btn" href="javascript:;">保存</a>
+					<a id="cancel" class="btn" href="javascript:;">取消</a>
+				</div>
+				<ul class="editWrap p20">
+					<li><input id="name" class="inputText infoInput name" type="text" placeholder="name ..."></li>
+					<li><input id="company" class="inputText infoInput company" type="text" placeholder="company address ..."></li>
+					<li><input id="phone" class="inputText infoInput phone" type="text" placeholder="phone number ..."></li>
+					<li><input id="house" class="inputText infoInput house" type="text" placeholder="house address ..."></li>
+					<li><input id="email" class="inputText infoInput email" type="text" placeholder="email address ..."></li>
+				</ul>
+			</div>
+		</div>
+		<script src="../../jquery-2.1.0.js" type="text/javascript"></script>
+		<script src="../json2.js"></script>
+		<script src="../underscore.js" type="text/javascript"></script>
+		<script src="../backbone.js" type="text/javascript"></script>
+		<script src="../backbone.localStorage.js"></script>
+		<script src="address.js" type="text/javascript"></script>
+		<script type="text/template" id="address-template">
+			<div class="item">
+				<label><% if (showName) { %><%= showName %><% } %></label>
+				<a class="delOne" href="javascript:;"></a>
+			</div>
+		</script>
+	</body>
+</html>

@@ -1,0 +1,95 @@
+html,body{
+	color:#333;
+	height:100%;
+}
+a{
+	color:#222;
+}
+a:hover{
+	color:#0055cc;
+}
+.p20{padding:20px;}
+.pb20{padding-bottom:20px;}
+.pl20{padding-left:20px;}
+.pr20{padding-right:20px;}
+.inputText{
+	border:1px solid #999;
+	box-shadow:rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	box-sizing:border-box;
+	height:35px;
+	line-height:25px;
+	padding:5px 10px;
+	width:100%;
+}
+.disable:hover,
+.disable{
+	color:#999;
+	cursor:default;
+	text-decoration:none;
+}
+.address{
+	border:1px solid #dedede;
+	border-top:0;
+	box-shadow:0 0 10px #aaa;
+	margin:0 auto;
+	padding:45px 0 0px;
+	width:450px;
+}
+.btnBar,
+.topBar{
+	background-color:#dfdfdf;
+	height:45px;
+	line-height:45px;
+	position:fixed;
+	top:0;
+	width:450px;
+}
+.btnBar .btn,
+.topBar .btn{
+	display:inline-block;
+	font-size:16px;
+	font-weight:900;
+	text-align:center;
+	width:99%;
+}
+.btnBar .btn{
+	width:49%;
+}
+.searchBar .checkAll{
+	display:block;
+	padding-top:5px;
+}
+.editWrap .infoInput{
+	margin-bottom:10px;
+	width:90%;
+}
+.addressList .item{
+	cursor:pointer;
+	font-size:16px;
+	font-weight:900;
+	height:35px;
+	line-height:35px;
+	position:relative;
+}
+.addressList .item:hover{
+	cursor:default;
+}
+.addressList .item label{
+	display:block;
+}
+.addressList .item .delOne{
+	background:url(destroy.png) no-repeat 0 0 transparent;
+	cursor:pointer;
+	display:none;
+	height:20px;
+	position:absolute;
+	top:7px;
+	right:0;
+	width:20px;
+}
+.addressList .item .delOne:hover{
+	background-position:0 -20px;
+}
+.addressList .item:hover .delOne{
+	display:block;
+}
